@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Page 1</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <header id="header">
+        <h1>Page 2</h1>
+    </header>
+    <main class="page-container">
+        <div class="card" onclick="navigateTo('menu_management.html')">
+            <h2>Menu Management</h2>
+            <p>View and manage all menu details.</p>
+        </div>
+        <div class="card" onclick="navigateTo('chef_management.html')">
+            <h2>Chef Management</h2>
+            <p>Manage chef assignments and details.</p>
+        </div>
+        <div class="card" onclick="navigateTo('financial_records.html')">
+            <h2>Financial Records</h2>
+            <p>Track branch expenditures and revenue.</p>
+        </div>
+    </main>
+    <script src="app.js"></script>
+</body>
+</html>

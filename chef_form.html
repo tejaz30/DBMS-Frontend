@@ -1,0 +1,120 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Chef Details Form</title>
+    <style>
+        body {
+            margin: 0;
+            padding: 0;
+            font-family: Arial, sans-serif;
+            background-color: #121212;
+            color: #ffffff;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+        }
+
+        .form-container {
+            background-color: #1f1f1f;
+            padding: 30px;
+            border-radius: 15px;
+            box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.5);
+            width: 400px;
+        }
+
+        .form-container h2 {
+            color: #00adb5;
+            margin-bottom: 20px;
+            text-align: center;
+        }
+
+        .form-group {
+            margin-bottom: 15px;
+        }
+
+        .form-group label {
+            display: block;
+            margin-bottom: 5px;
+            color: #ffffff;
+        }
+
+        .form-group input {
+            width: 100%;
+            padding: 10px;
+            border: none;
+            border-radius: 5px;
+            background-color: #2a2a2a;
+            color: #ffffff;
+            font-size: 14px;
+        }
+
+        .form-group input::placeholder {
+            color: #aaaaaa;
+        }
+
+        .form-container button {
+            width: 100%;
+            background-color: #00adb5;
+            color: #ffffff;
+            padding: 10px;
+            border: none;
+            border-radius: 5px;
+            font-size: 16px;
+            cursor: pointer;
+            transition: background-color 0.3s ease;
+        }
+
+        .form-container button:hover {
+            background-color: #028d95;
+        }
+    </style>
+</head>
+<body>
+    <div class="form-container">
+        <h2>Chef Details Form</h2>
+        <form action="submit_chef_details" method="POST">
+            <div class="form-group">
+                <label for="ssn_no">SSN Number</label>
+                <input type="text" id="ssn_no" name="ssn_no" placeholder="Enter SSN Number" required>
+            </div>
+
+            <div class="form-group">
+                <label for="chef_name">Chef First Name</label>
+                <input type="text" id="chef_name" name="chef_name" placeholder="Enter Chef Name" required>
+            </div>
+
+            <div class="form-group">
+                <label for="chef_name">Chef Middle Name</label>
+                <input type="text" id="chef_name" name="chef_name" placeholder="Enter Chef Name" required>
+            </div>
+
+            <div class="form-group">
+                <label for="chef_name">Chef Last Name</label>
+                <input type="text" id="chef_name" name="chef_name" placeholder="Enter Chef Name" required>
+            </div>
+
+            <div class="form-group">
+                <label for="join_date">Join Date</label>
+                <input type="date" id="join_date" name="join_date" required>
+            </div>
+
+            <div class="form-group">
+                <label for="salary">Salary</label>
+                <input type="number" id="salary" name="salary" placeholder="Enter Salary" required>
+            </div>
+
+            <div class="form-group">
+                <label for="speciality_cuisine">Speciality Cuisine</label>
+                <input type="text" id="speciality_cuisine" name="speciality_cuisine" placeholder="Enter Speciality Cuisine" required>
+            </div>
+
+            <button type="submit">Submit</button>
+        </form>
+    </div>
+
+    <script src="app.js"></script>
+</body>
+</html>
